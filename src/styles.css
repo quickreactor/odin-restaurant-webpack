@@ -1,0 +1,80 @@
+/* General reset for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+  }
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header and main title styling */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffcc00; /* Bagel Hole themed color */
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+/* Styling for the navigation buttons */
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    margin: 0 10px;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #ffcc00;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling when a button is hovered */
+button:hover {
+    background-color: #836900;
+    color: #fff;
+}
+
+/* Active/selected button styling */
+button.selected {
+    background-color: #616161;
+    color: #fff;
+    border-color: #ff9900; /* Slightly darker border for selected button */
+}
+
+/* Content area */
+#content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Remove outline when button is focused */
+button:focus {
+    outline: none;
+}
