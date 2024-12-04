@@ -11,6 +11,8 @@ const contentDiv = qs('#content');
 const navEl = qs('nav');
 const buttons = qsa('button');
 navEl.addEventListener('click', navClickHandler);
+contentDiv.appendChild(createHomeContent())
+buttons[0].classList.add('selected');
 
 
 function navClickHandler(e) {
